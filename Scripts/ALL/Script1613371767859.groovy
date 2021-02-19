@@ -35,11 +35,6 @@ Mobile.setEncryptedText(findTestObject('Create Account/Stext_Confirm Password'),
 
 Mobile.tap(findTestObject('Create Account/Button_Create Profile'), 3)
 
-//LOGIN
-not_run: Mobile.setText(findTestObject('Object Repository/Login/Stext_Username'), 'kurniawati', 0)
-
-not_run: Mobile.setText(findTestObject('Object Repository/Login/Stext_Password'), 'kurniawati123', 0)
-
 Mobile.tap(findTestObject('Object Repository/Login/Button_Login'), 3)
 
 //ACCOUNT
@@ -65,23 +60,10 @@ Mobile.setText(findTestObject('Object Repository/Account/Input Add Account/Stext
 
 Mobile.tap(findTestObject('Object Repository/Account/Input Add Account/Button_ADD'), 3)
 
-//VERIFY ACCOUNT
-not_run: Mobile.verifyElementText(findTestObject('Object Repository/Account/TView_Account Name M Fachri'), 'M Fachri')
-
-not_run: Mobile.verifyElementText(findTestObject('Account/TView_Account No M Fachri'), 'Account no: A1')
-
-not_run: Mobile.verifyElementText(findTestObject('Object Repository/Account/TView_Account Balance Fachri'), 'Account balance: $1500000.00')
-
-not_run: Mobile.tap(findTestObject('Object Repository/Account/Input Add Account/Button_View Group'), 3)
-
-not_run: Mobile.tap(findTestObject('Object Repository/Account/Input Add Account/Button_Back'), 3)
-
 //TRANSFER
 Mobile.tap(findTestObject('Login/Button_StripTiga'), 3)
 
 Mobile.tap(findTestObject('Object Repository/Menu-menu Strip Tiga/Button_Make a Transfer'), 0)
-
-not_run: Mobile.tap(findTestObject('Object Repository/Transfer/Spinner_SelectAccont'), 0)
 
 Mobile.setText(findTestObject('Object Repository/Transfer/Stext_Transfer Amount'), '100000', 0)
 
